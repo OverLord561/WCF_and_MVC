@@ -105,6 +105,15 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\201611070433429_InitialCreate.cs" />
+    <Compile Include="Migrations\201611070433429_InitialCreate.Designer.cs">
+      <DependentUpon>201611070433429_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611072250078_Required.cs" />
+    <Compile Include="Migrations\201611072250078_Required.Designer.cs">
+      <DependentUpon>201611072250078_Required.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ProductContext.cs" />
     <Compile Include="Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
@@ -126,6 +135,14 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201611070433429_InitialCreate.resx">
+      <DependentUpon>201611070433429_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611072250078_Required.resx">
+      <DependentUpon>201611072250078_Required.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -38,10 +38,11 @@ namespace MyWCFService
         public string Name { get; set; }
 
         [DataMember]
-        
+        [Required]
         public int Price { get; set; }
 
         [DataMember]
+        [Required]
         public string Description { get; set; }
     }
     
